@@ -3,18 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
     <title>Document</title>
 </head>
 <body>
+    <!-- input form -->
     <div class="form">
         <form action="">
-     <div class="heading">
-        <h2> Risk Capture Form </h2>
-    </div>
-            <label for="risk description">Risk Description</label>
-            <textarea type="textarea" name="risk description" rows="7" placeholder="Risk that systems cannot be restored in the event of a disaster here">
-                
-            </textarea>
+     <fieldset>
+        <legend><b>Risk Capture Form</b></legend>
+            <div class="formContainer">
+                <label for="risk description">Risk Description:</label> <br>
+            <textarea name="risk description" id="description" cols="27" rows="7" 
+            placeholder="Risk that systems cannot be restored in the event of a disaster here"></textarea>
+            <br> <br>
+
+            <label for="owner">Owner:</label> <br>
+            <select name="owner" id="owner">
+                <option value="IT Manager">IT Manager</option>
+                <option value="IT Manager">IT Manager</option>
+                <option value="IT Manager">IT Manager</option>
+                <option value="IT Manager">IT Manager</option>
+            </select> <br> <br>
+
+            <label for="identified date">Identified Date:</label><br>
+            <input type="date" name="identified date" id="idendate"><br><br>
+
+            <label for="review date">review Date:</label><br>
+            <input type="date" name="review date" id="revdate"><br><br>
+
+            <label for="category">Category:</label><br>
+            <select name="category" id="category">
+                <option value="Information Security">Information Security</option>
+                <option value="Information Security">Information Security</option>
+                <option value="Information Security">Information Security</option>
+                <option value="Information Security">Information Security</option>
+            </select> <br><br>
+
+            <label for="project">Project:</label><br>
+            <select name="project" id="project">
+                <option value="Billing System">Billing System</option>
+                <option value="Billing System">Billing System</option>
+                <option value="Billing System">Billing System</option>
+                <option value="Billing System">Billing System</option>
+            </select> <br><br>
+
+            <label for="business unit">Business Unit:</label><br>
+            <select name="business unit" id="business unit">
+                <option value="Kenya Operations">Kenya Operations</option>
+                <option value="Kenya Operations">Kenya Operations</option>
+                <option value="Kenya Operations">Kenya Operations</option>
+                <option value="Kenya Operations">Kenya Operations</option>
+            </select> <br><br>
+
+            <label for="probability">Probability:</label><br>
+            <input type="number" name="probability" id="probability" min="1" max="10"><br>
+
+
+            <label for="impact">Impact:</label><br>
+            <input type="number" name="impact" id="impact" min="1" max="10"><br><br>
+
+            <input type="submit" value="save">
+            </div>
+     </fieldset>
         </form>
     </div>
 </body>

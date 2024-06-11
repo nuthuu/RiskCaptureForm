@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form {
+    width: 600px;
+}
+
+form {
+    border-radius: 20px;
+    border: 1px solid ;
+    padding: 20px;
+    box-shadow:  0 0 100px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label, textarea, select, input {
+    width: 100%;
+    margin-top: 3px;
+    border-radius: 5px;
+    display: block;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: gray  ;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* input[type="submit"]:hover {
+    background-color:  rgba(230, 227, 227, 0.784);
+} */
